@@ -1,0 +1,276 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/vinodpatel/ontologies/2022/0/university#"
+     xml:base="http://www.semanticweb.org/vinodpatel/ontologies/2022/0/university"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:university="http://www.semanticweb.org/vinodpatel/ontologies/2022/0/university#"
+     xmlns:university1="http://192.168.0.1:80/onto/university#">
+    <owl:Ontology rdf:about="http://192.168.0.1:80/onto/university.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://192.168.0.1:80/onto/university#studies -->
+
+    <owl:ObjectProperty rdf:about="http://192.168.0.1:80/onto/university#studies">
+        <rdfs:domain rdf:resource="http://192.168.0.1:80/onto/university#Student"/>
+        <rdfs:range rdf:resource="http://192.168.0.1:80/onto/university#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://192.168.0.1:80/onto/university#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://192.168.0.1:80/onto/university#teaches">
+        <rdfs:domain rdf:resource="http://192.168.0.1:80/onto/university#Lecturer"/>
+        <rdfs:range rdf:resource="http://192.168.0.1:80/onto/university#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://192.168.0.1:80/onto/university#first_name -->
+
+    <owl:DatatypeProperty rdf:about="http://192.168.0.1:80/onto/university#first_name">
+        <rdfs:domain rdf:resource="http://192.168.0.1:80/onto/university#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://192.168.0.1:80/onto/university#last_name -->
+
+    <owl:DatatypeProperty rdf:about="http://192.168.0.1:80/onto/university#last_name">
+        <rdfs:domain rdf:resource="http://192.168.0.1:80/onto/university#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://192.168.0.1:80/onto/university#staffID -->
+
+    <owl:DatatypeProperty rdf:about="http://192.168.0.1:80/onto/university#staffID">
+        <rdfs:domain rdf:resource="http://192.168.0.1:80/onto/university#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://192.168.0.1:80/onto/university#studentID -->
+
+    <owl:DatatypeProperty rdf:about="http://192.168.0.1:80/onto/university#studentID">
+        <rdfs:domain rdf:resource="http://192.168.0.1:80/onto/university#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://192.168.0.1:80/onto/university#CSModule -->
+
+    <owl:Class rdf:about="http://192.168.0.1:80/onto/university#CSModule">
+        <rdfs:subClassOf rdf:resource="http://192.168.0.1:80/onto/university#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://192.168.0.1:80/onto/university#Lecturer -->
+
+    <owl:Class rdf:about="http://192.168.0.1:80/onto/university#Lecturer">
+        <rdfs:subClassOf rdf:resource="http://192.168.0.1:80/onto/university#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://192.168.0.1:80/onto/university#MathModule -->
+
+    <owl:Class rdf:about="http://192.168.0.1:80/onto/university#MathModule">
+        <rdfs:subClassOf rdf:resource="http://192.168.0.1:80/onto/university#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://192.168.0.1:80/onto/university#Module -->
+
+    <owl:Class rdf:about="http://192.168.0.1:80/onto/university#Module"/>
+    
+
+
+    <!-- http://192.168.0.1:80/onto/university#Person -->
+
+    <owl:Class rdf:about="http://192.168.0.1:80/onto/university#Person"/>
+    
+
+
+    <!-- http://192.168.0.1:80/onto/university#Student -->
+
+    <owl:Class rdf:about="http://192.168.0.1:80/onto/university#Student">
+        <rdfs:subClassOf rdf:resource="http://192.168.0.1:80/onto/university#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://192.168.0.1:80/onto/university#CS101 -->
+
+    <owl:NamedIndividual rdf:about="http://192.168.0.1:80/onto/university#CS101">
+        <rdf:type rdf:resource="http://192.168.0.1:80/onto/university#CSModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://192.168.0.1:80/onto/university#CS103 -->
+
+    <owl:NamedIndividual rdf:about="http://192.168.0.1:80/onto/university#CS103">
+        <rdf:type rdf:resource="http://192.168.0.1:80/onto/university#CSModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://192.168.0.1:80/onto/university#Lecturer1 -->
+
+    <owl:NamedIndividual rdf:about="http://192.168.0.1:80/onto/university#Lecturer1">
+        <rdf:type rdf:resource="http://192.168.0.1:80/onto/university#Lecturer"/>
+        <university1:teaches rdf:resource="http://192.168.0.1:80/onto/university#CS101"/>
+        <university1:teaches rdf:resource="http://192.168.0.1:80/onto/university#M204"/>
+        <university1:first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amit</university1:first_name>
+        <university1:last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kumar</university1:last_name>
+        <university1:staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">101</university1:staffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://192.168.0.1:80/onto/university#Lecturer2 -->
+
+    <owl:NamedIndividual rdf:about="http://192.168.0.1:80/onto/university#Lecturer2">
+        <rdf:type rdf:resource="http://192.168.0.1:80/onto/university#Lecturer"/>
+        <university1:teaches rdf:resource="http://192.168.0.1:80/onto/university#CS103"/>
+        <university1:teaches rdf:resource="http://192.168.0.1:80/onto/university#M201"/>
+        <university1:first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dilip</university1:first_name>
+        <university1:last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pal</university1:last_name>
+        <university1:staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">102</university1:staffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://192.168.0.1:80/onto/university#M201 -->
+
+    <owl:NamedIndividual rdf:about="http://192.168.0.1:80/onto/university#M201">
+        <rdf:type rdf:resource="http://192.168.0.1:80/onto/university#MathModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://192.168.0.1:80/onto/university#M204 -->
+
+    <owl:NamedIndividual rdf:about="http://192.168.0.1:80/onto/university#M204">
+        <rdf:type rdf:resource="http://192.168.0.1:80/onto/university#MathModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://192.168.0.1:80/onto/university#Student1 -->
+
+    <owl:NamedIndividual rdf:about="http://192.168.0.1:80/onto/university#Student1">
+        <rdf:type rdf:resource="http://192.168.0.1:80/onto/university#Student"/>
+        <university1:studies rdf:resource="http://192.168.0.1:80/onto/university#CS101"/>
+        <university1:studies rdf:resource="http://192.168.0.1:80/onto/university#M201"/>
+        <university1:first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aniket</university1:first_name>
+        <university1:last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patel</university1:last_name>
+        <university1:studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1001</university1:studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://192.168.0.1:80/onto/university#Student2 -->
+
+    <owl:NamedIndividual rdf:about="http://192.168.0.1:80/onto/university#Student2">
+        <rdf:type rdf:resource="http://192.168.0.1:80/onto/university#Student"/>
+        <university1:studies rdf:resource="http://192.168.0.1:80/onto/university#CS101"/>
+        <university1:studies rdf:resource="http://192.168.0.1:80/onto/university#CS103"/>
+        <university1:first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Santosh</university1:first_name>
+        <university1:last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tiwari</university1:last_name>
+        <university1:studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1002</university1:studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://192.168.0.1:80/onto/university#Student3 -->
+
+    <owl:NamedIndividual rdf:about="http://192.168.0.1:80/onto/university#Student3">
+        <rdf:type rdf:resource="http://192.168.0.1:80/onto/university#Student"/>
+        <university1:studies rdf:resource="http://192.168.0.1:80/onto/university#M201"/>
+        <university1:studies rdf:resource="http://192.168.0.1:80/onto/university#M204"/>
+        <university1:first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yash</university1:first_name>
+        <university1:last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Singh</university1:last_name>
+        <university1:studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1003</university1:studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://192.168.0.1:80/onto/university#CSModule"/>
+            <rdf:Description rdf:about="http://192.168.0.1:80/onto/university#Lecturer"/>
+            <rdf:Description rdf:about="http://192.168.0.1:80/onto/university#MathModule"/>
+            <rdf:Description rdf:about="http://192.168.0.1:80/onto/university#Student"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
