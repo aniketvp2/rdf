@@ -8,7 +8,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:university="http://www.semanticweb.org/vinodpatel/ontologies/2022/0/university#"
      xmlns:university1="http://192.168.0.1:80/onto/university#">
-    <owl:Ontology rdf:about="http://192.168.0.1:80/onto/university.owl"/>
+    <owl:Ontology rdf:about="https://aniketvp2.github.io/rdf/university.owl"/>
     
 
 
